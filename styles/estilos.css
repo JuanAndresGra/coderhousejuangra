@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(/assets/fondo-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/** Comienzo de estilos del header **/
+
+.header {
+    background-color: rgba(252, 252, 252, 0.1);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.header a {
+    text-decoration: none;
+    color: #070800;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+li a:hover {
+    color:  #6d8875;
+}
+
+.logo > a > img {
+    max-width: 80px;
+    max-height: 80px;
+    cursor: pointer;
+}
+
+.header_nav--ul{
+    padding-right: 1em;
+}
+
+.header_nav--ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 2em 0.2em;
+    
+}
+
+/** Final de estilos del header **/
+
+/** Comienzo estilos footer**/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+       
+}
+
+.redes > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 1em 1em;
+    
+}
+
+.copy {
+    font-weight: 100;
+    font-size: 0.8em;
+    display: flex;
+    padding: 0 1em 1em 0;
+    align-items: end;
+    color: white;
+}
+
+/** Final estilos footer**/
+
+/**Comienzo estilos main HTML home**/
+
+.h1_main{
+    padding: 0.5em 2em 1em 0;
+    text-align: center;
+}
+
+.container_main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.container_main > div {
+    max-width: 31.25rem;
+    max-height: 31rem;
+    background-color: rgb(231, 164, 137, 0.5);
+    border-radius: 15px;
+}
+
+.container_main > div > h2 {
+    padding: 1em 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.container_main > div > p { 
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/* Estilos para el carrousel*/
+
+.container_carrousel {
+    height: 350px;
+    width: 100%;
+    margin: 3em 0;
+    text-align: center;
+}
+
+.container_carrousel img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+/** Final estilos main HTML home**/
+
+/**Comienzo estilos seccion nuestros clientes dicen home**/
+
+.titulo_seccion{
+    text-align: center;
+    font-size: 2em;
+    padding: 0 0 0 20px;
+}
+
+.container_clientes{
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_clientes > div {
+    border-radius: 15px;
+    max-width: 250px;
+    height: 200px;
+    background-color: rgb(231, 164, 137, 0.5);
+}
+
+.container_clientes > div > h2 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.container_clientes > div > p {
+    text-align: center;
+    padding: 0.5em;
+}
+
+/**Final estilos seccion nuestros clientes dicen home**/
+
+/** Comienzo estilos HTML tratamientos cosmetologicos**/
+
+.body_tratamientos {
+    background-image: url(../assets/fondo-tratamientos.jpg);
+}
+
+.titulo_servicios {
+    text-align: center;
+    padding-top: 0.5em; 
+           
+}
+
+.contenedor_tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(90vh - 90px - 90px);
+
+}
+
+.tarjeta_servicio {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.img_servicio > img {
+    height: 300px;
+    max-width: 200px;
+    border-radius: 15px 0 0 15px;
+    object-fit: fill;
+}
+
+.contenedor_texto--servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_texto--servicio > h2 {
+    padding: 0 0 16px 0;
+}
+
+.contenedor_texto--servicio > p {
+    padding: 0 16px;
+}
+
+
+
+/** Final estilos HTML tratamientos cosmetologicos**/
+
+/**Comienzo estilos terapia floral**/
+.body_flor {
+    background-image: url(../assets/fondo-bash.jpg);
+}
+
+.contenedor_flores {
+    display: flex;
+    min-height: calc(100vh - 90px - 90px);
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.flores_carrousel > img {
+    margin: 2em;
+    border-radius: 15px;
+    height: 70vh;  
+}
+
+.contenedor_flores--informacion {
+    display: flex;
+    flex-direction: column;  
+    width: 60%;
+    min-height: 70vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    align-items: center;
+}
+
+.contenedor_flores--informacion > h1 {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 3.5em;
+}
+
+.contenedor_flores--informacion > h2 {
+    font-size: 2em;
+}
+
+.contenedor_flores--informacion > p {
+    padding: 1em 0 1em 0;
+    font-size: 1.5em;
+}
+
+
+/**final estilos terapia floral**/
+
+/**Comienzo estilos nutricion**/
+
+.body_nutri {
+    background-image: url(../assets/nutri-fondo1.jpg);
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: soft-light;
+    color: white;
+}
+
+.contenedor_nutri {
+    min-height: calc(93vh - 90px - 90px);
+    margin: 2em;
+    
+}
+
+
+/**Final estilos nutricion**/
+
+/**Comienzo estilos contactame**/
+
+.body_contactame {
+    background-image: url(../assets/fondo-contactame.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.container_formulario {
+    display: flex;
+    justify-content: center;   
+}
+
+.container_formulario--items {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(171, 214, 186, 0.5);
+    border-radius: 15px;
+    width: 30vw;
+    height: 50vh;
+}
+
+.container_formulario--items > div {
+    padding: 0.5em 1.5em;
+    
+}
+
+.titulo_form{
+    text-align: center;
+    padding: .5em 0 .5em 0;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_deja--mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_deja--mensaje > label {
+    padding-bottom: 1em;
+
+}
+
+
+/**Final estilos contactame**/
