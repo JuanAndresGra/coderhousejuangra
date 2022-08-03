@@ -113,7 +113,7 @@ li a:hover {
 /**Comienzo estilos main HTML home**/
 
 .body_inicio {
-    background-image: url(/assets/fondo-inicio.jpg);
+    background-image: url(../assets/fondo-inicio.jpg);
 }
 
 .h1_main{
