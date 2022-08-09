@@ -45,7 +45,7 @@ h1 {
     text-decoration: none;
     color: #070800;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 li a:hover {
@@ -127,14 +127,22 @@ li a:hover {
     gap: 1em;
 }
 
-.container_main > div {
+.carta_presentacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
     background-color: rgb(231, 164, 137, 0.5);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.carta_presentacion:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-3%);
 }
 
  .container_main > div > h2 {
@@ -147,7 +155,7 @@ li a:hover {
     padding: 1em;
     text-align: center;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 /** Estilos para el carrousel**/
@@ -339,9 +347,7 @@ li a:hover {
 /**Comienzo estilos nutricion**/
 
 .body_nutri {
-    background-image: url(../assets/nutri-fondo1.jpg);
-    background-color: rgb(0, 0, 0, 0.3);
-    background-blend-mode: soft-light;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg) ;
     color: white;
 }
 
@@ -425,6 +431,7 @@ li a:hover {
 
     .header_nav--ul {
         display: flex;
+        margin: 0;
     } 
 
     .header_nav--ul li {
