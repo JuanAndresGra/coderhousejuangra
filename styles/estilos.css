@@ -13,8 +13,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1 {
@@ -25,20 +25,7 @@ h1 {
 /** Comienzo de estilos del header **/
 
 .header_container {
-    width: 100vw;
-    background-color: rgba(252, 252, 252, 0.1);
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.header_items {
-    max-width: 1200px;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header_container a {
@@ -48,32 +35,20 @@ h1 {
     font-size: 1.5em;
 }
 
-li a:hover {
+.container-md{
+    max-width: 1200px;
+}
+
+.nav-item > a:hover {
     color:  #6d8875;
 }
 
-.logo > a > img {
+.logo > img {
     max-width: 80px;
     max-height: 80px;
     cursor: pointer;
     padding: 10px;
 }
-
- .header_nav--ul{
-    display: none;
-} 
-
-.menu_hamburguesa{
-    color: black;
-    font-size: 0px;
-    border: none;
-    padding: 35px;
-    background-image: url(../assets/iconos/menu.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
-
 
 /** Final de estilos del header **/
 
@@ -114,6 +89,8 @@ li a:hover {
 
 .body_inicio {
     background-image: url(../assets/fondo-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .h1_main{
@@ -160,17 +137,18 @@ li a:hover {
 
 /** Estilos para el carrousel**/
 
-.container_carrousel {
+.contenedor_carrousel{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 3em 0;
 }
 
-.container_carrousel img {
+.carousel {
+    margin: 2em 0; 
     min-width: 300px;
-    max-width: 50%;
+    max-width: 80%;      
+}
+
+.carousel-inner {
     border-radius: 15px;
 }
 
@@ -347,8 +325,9 @@ li a:hover {
 /**Comienzo estilos nutricion**/
 
 .body_nutri {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg) ;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
     color: white;
+    background-size: cover;
 }
 
 .contenedor_nutri {
@@ -378,10 +357,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     background-color: rgb(171, 214, 186, 0.5);
-    border-radius: 15px;
-    width: 90vw;
-    height: 48vh;
-    max-width: 45vh;
+    border-radius: 15px;    
 }
 
 .container_formulario--items > div {
@@ -396,7 +372,7 @@ li a:hover {
 
 .inputs {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .input_deja--mensaje {
@@ -414,6 +390,14 @@ li a:hover {
 
 @media (min-width: 990px) {
 
+    /** Estilos generales para los main**/
+
+    .contenedor_main,
+    .contenedor_seccion,
+    .contenedor_tratamientos {
+        max-width: 1200px;
+    }
+
     /** fondos de pagina **/
 
         .body_inicio,
@@ -424,22 +408,12 @@ li a:hover {
             background-size: cover;
         }
     
-    /** estilos header**/
-    .menu_hamburguesa {
-        display: none;
+    /** Estilos footer**/
+    
+    .footer_web {
+        max-width: 1200px;
     }
 
-    .header_nav--ul {
-        display: flex;
-        margin: 0;
-    } 
-
-    .header_nav--ul li {
-        list-style: none;
-        margin: 2em .7em;
-    } 
-
-    /**fin estilos header**/
 
     /**Comienzo estilos main HTML home**/
 
@@ -458,12 +432,18 @@ li a:hover {
 
     /** Estilos para el carrousel**/
 
-    .container_carrousel {
-        margin: 2em 0;
+    .contenedor_carrousel{
+        display: flex;
+        justify-content: center;
     }
 
-    .container_carrousel img {
-        max-width: 500px;
+    .carousel {
+        margin: 2em 0; 
+        max-width: 500px;      
+    }
+
+    .carousel-inner {
+        border-radius: 15px;
     }
 
     /** Final estilos main HTML home**/
@@ -474,16 +454,21 @@ li a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        row-gap: 30px;   
-        max-width: 100%;     
+        row-gap: 30px; 
+        max-width: 100%; 
+        margin: 50px 0;    
     }
 
     .tarjeta_servicio {
         display: flex;
         flex-direction: row;
-        width: 500px;
-        height: 300px;
+        width: 550px;
+        height: 350px;
         margin: 0;
+    }
+
+    .contenedor_texto--servicio > h2{
+        text-align: center;
     }
 
     .img_servicio > img {
@@ -522,11 +507,17 @@ li a:hover {
 
     /**Comienzo estilos contactame**/
 
-    .container_formulario--items {
-        min-width: 45vh;
-        max-width: 30%;
-        height: 43vh;
+    .inputs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
+
+    .container_formulario--items label {
+        margin: 0 10px;
+    }
+
+    
 
     /**Final estilos contactame**/
 }
