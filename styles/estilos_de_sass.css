@@ -1,0 +1,758 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+/** Comienzo de estilos del header **/
+.header_container {
+  width: 100%;
+}
+
+.header_container .container-md {
+  max-width: 1200px;
+}
+
+.header_container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.header_container .nav-item > a:hover {
+  color: #abd6ba;
+}
+
+.header_container .logo > img {
+  max-width: 80px;
+  max-height: 80px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/** Final de estilos del header **/
+/** Comienzo estilos footer **/
+.footer_web {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.footer_web .redes > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.footer_web .copy {
+  font-weight: 100;
+  font-size: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+/** Final estilos footer**/
+/**Comienzo estilos main HTML home**/
+.body_inicio {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../assets/fondo-inicio.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../assets/fondo-inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /** Estilos para el carrousel**/
+  /**Comienzo estilos seccion nuestros clientes dicen home**/
+  /**Final estilos seccion nuestros clientes dicen home**/
+}
+
+.body_inicio .h1_main {
+  text-align: center;
+}
+
+.body_inicio .container_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+}
+
+.body_inicio .container_main .carta_presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  background-color: rgba(231, 164, 137, 0.5);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.body_inicio .container_main .carta_presentacion h2 {
+  padding-top: 1em;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.body_inicio .container_main .carta_presentacion p {
+  padding: 1em;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.body_inicio .container_main .carta_presentacion:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+}
+
+.body_inicio .contenedor_carrousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body_inicio .contenedor_carrousel .carousel {
+  margin: 2em 0;
+  width: 80%;
+  max-width: 500px;
+}
+
+.body_inicio .contenedor_carrousel .carousel .carousel-inner {
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.body_inicio .contenedor_carrousel .carousel .carousel-inner .carousel-item {
+  height: 40vh;
+}
+
+.body_inicio .contenedor_carrousel .carousel .carousel-inner .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.body_inicio .contenedor_carrousel .carousel .carousel-inner:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(100%, 100%);
+          transform: scale(100%, 100%);
+}
+
+.body_inicio .titulo_seccion {
+  text-align: center;
+  font-size: 2em;
+  padding: 0 0 20px 20px;
+}
+
+.body_inicio .container_clientes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "cecilia cecilia cecilia cecilia" "juan juan silvia silvia" "juan juan silvia silvia" "fernando fernando fernando fernando";
+  justify-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.body_inicio .container_clientes .comentario1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: juan;
+}
+
+.body_inicio .container_clientes .comentario2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: silvia;
+}
+
+.body_inicio .container_clientes .comentario3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: cecilia;
+}
+
+.body_inicio .container_clientes .comentario4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: fernando;
+}
+
+.body_inicio .container_clientes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  background-color: rgba(231, 164, 137, 0.5);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.body_inicio .container_clientes div h2 {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.body_inicio .container_clientes div p {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.body_inicio .container_clientes div:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+}
+
+/** Final estilos main HTML home**/
+/** Comienzo estilos HTML tratamientos cosmetologicos**/
+.body_tratamientos {
+  background-image: url(../assets/fondo-tratamientos.jpg);
+  height: 100%;
+}
+
+.body_tratamientos .titulo_servicios {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.body_tratamientos .contenedor_tarjetas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  max-width: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+.body_tratamientos .contenedor_tarjetas .tarjeta_servicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45vh;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 100%;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.body_tratamientos .contenedor_tarjetas .tarjeta_servicio .img_servicio > img {
+  height: 150px;
+  min-height: 100%;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 20% 40%;
+     object-position: 20% 40%;
+}
+
+.body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio h2 {
+  padding: 0 0 16px 0;
+}
+
+.body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio p {
+  padding: 0 16px;
+}
+
+.body_tratamientos .contenedor_tarjetas .tarjeta_servicio:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+}
+
+/** Final estilos HTML tratamientos cosmetologicos**/
+/**Comienzo estilos terapia floral**/
+.body_flor {
+  background-image: url(../assets/fondo-bash.jpg);
+  background-position: 48%;
+}
+
+.body_flor .contenedor_flores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body_flor .contenedor_flores .flores_carrousel > img {
+  border-radius: 15px;
+  height: 70vh;
+  max-width: 90vw;
+}
+
+.body_flor .contenedor_flores .contenedor_flores--informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+  min-height: 70vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body_flor .contenedor_flores .contenedor_flores--informacion h1 {
+  text-align: center;
+  padding: .2em;
+  font-size: 2.7em;
+}
+
+.body_flor .contenedor_flores .contenedor_flores--informacion h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.body_flor .contenedor_flores .contenedor_flores--informacion p {
+  padding: 1em 0 1em 0;
+  font-size: 1.5em;
+  text-align: justify;
+  padding: .5em;
+}
+
+/**final estilos terapia floral**/
+/**Comienzo estilos nutricion**/
+.body_nutri {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(../assets/nutri-fondo1.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
+  color: white;
+  background-size: cover;
+}
+
+.body_nutri .contenedor_nutri {
+  min-height: calc(97vh - 100px - 100px);
+  margin: 2em;
+}
+
+/**Final estilos nutricion**/
+/**Comienzo estilos contactame**/
+.body_contactame {
+  background-image: url(../assets/fondo-contactame.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  min-height: 100vh;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.body_contactame .container_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.body_contactame .container_formulario .container_formulario--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(171, 214, 186, 0.5);
+  border-radius: 15px;
+  width: 80%;
+  max-width: 650px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.body_contactame .container_formulario .container_formulario--items .titulo_form {
+  text-align: center;
+  padding: .5em 0 .5em 0;
+}
+
+.body_contactame .container_formulario .container_formulario--items div {
+  padding: 0.5em 1.5em;
+}
+
+.body_contactame .container_formulario .container_formulario--items input,
+.body_contactame .container_formulario .container_formulario--items select,
+.body_contactame .container_formulario .container_formulario--items textarea {
+  border-style: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.body_contactame .container_formulario .container_formulario--items .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body_contactame .container_formulario .container_formulario--items .input_deja--mensaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body_contactame .container_formulario .container_formulario--items .input_deja--mensaje label {
+  padding-bottom: 1em;
+}
+
+.body_contactame .container_formulario .container_formulario--items .checkbox_promo label {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body_contactame .container_formulario .container_formulario--items .checkbox_promo input {
+  width: 30px;
+}
+
+.body_contactame .container_formulario .container_formulario--items .formulario_botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.body_contactame .container_formulario .container_formulario--items .formulario_botones input {
+  width: 45%;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.body_contactame .container_formulario .container_formulario--items .formulario_botones input:hover {
+  color: white;
+  background-color: #abd6ba;
+}
+
+/**Final estilos contactame**/
+@media (min-width: 990px) {
+  /** Estilos generales para los main**/
+  .contenedor_main,
+  .contenedor_seccion,
+  .contenedor_tratamientos {
+    max-width: 1200px;
+  }
+  /** fondos de pagina **/
+  .body_inicio,
+  .body_tratamientos,
+  .body_flor,
+  .body_nutri,
+  .body_contactame {
+    background-size: cover;
+  }
+  /** Estilos footer**/
+  .footer_web {
+    max-width: 1200px;
+  }
+  /**Comienzo estilos main HTML home**/
+  .body_inicio {
+    /** Estilos para el carrousel**/
+  }
+  .body_inicio .h1_main {
+    padding: 1em;
+  }
+  .body_inicio .container_main {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0 10px;
+  }
+  .body_inicio .container_main div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .body_inicio .contenedor_carrousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body_inicio .contenedor_carrousel .carousel {
+    margin: 2em 0;
+    max-width: 500px;
+  }
+  .body_inicio .contenedor_carrousel .carousel .carousel-inner {
+    border-radius: 15px;
+  }
+  /** Final estilos main HTML home**/
+  /** Comienzo estilos HTML tratamientos cosmetologicos**/
+  .body_tratamientos .contenedor_tarjetas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    row-gap: 30px;
+    max-width: 100%;
+    margin: 50px 0;
+  }
+  .body_tratamientos .contenedor_tarjetas .tarjeta_servicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 550px;
+    height: 350px;
+    margin: 0;
+  }
+  .body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio > h2 {
+    text-align: center;
+  }
+  .body_tratamientos .contenedor_tarjetas .tarjeta_servicio .img_servicio > img {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  /** Final estilos HTML tratamientos cosmetologicos**/
+  /**Estilos terapia floral**/
+  .body_flor .contenedor_flores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: calc(100vh - 90px - 90px);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body_flor .flores_carrousel > img {
+    margin: 2em;
+  }
+  .body_flor .contenedor_flores--informacion > h1 {
+    padding: 0.5em;
+    font-size: 3.5em;
+  }
+  .body_flor .contenedor_flores--informacion > p {
+    padding: 1em 0 1em 0;
+    font-size: 1.5em;
+  }
+  /** fin estilos terapia floral**/
+  /**Comienzo estilos contactame**/
+  .body_contactame .container_formulario .container_formulario--items {
+    width: 45vw;
+    min-width: 650px;
+  }
+  .body_contactame .container_formulario .container_formulario--items .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .body_contactame .container_formulario .container_formulario--items label {
+    margin-right: 60px;
+  }
+  .body_contactame .container_formulario .container_formulario--items input {
+    width: 65%;
+  }
+  .body_contactame .container_formulario .container_formulario--items .formulario_botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .body_contactame .container_formulario .container_formulario--items .formulario_botones input {
+    width: 40%;
+  }
+  /**Final estilos contactame**/
+}
+/*# sourceMappingURL=estilos_de_sass.css.map */

@@ -1,0 +1,670 @@
+$color-verde: rgb(171, 214, 186);
+$color-salmon: rgb(231, 164, 137);
+$color-texto-blanco: rgb(255, 255, 255);
+$color-texto-negro: rgb(0, 0, 0);
+$color-shadow: rgba(0, 0, 0, 0.2);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;    
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/** Comienzo de estilos del header **/
+
+.header_container {
+    width: 100%;
+
+
+    .container-md {
+        max-width: 1200px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-texto-negro;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    .nav-item > a:hover {
+        color:  $color-verde;
+    }
+
+         
+    .logo > img {
+        max-width: 80px;
+        max-height: 80px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+}
+
+/** Final de estilos del header **/
+
+/** Comienzo estilos footer **/
+
+.footer_web {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    
+    .redes > a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .copy {
+        font-weight: 100;
+        font-size: 0.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+    
+}
+
+/** Final estilos footer**/
+
+/**Comienzo estilos main HTML home**/
+
+.body_inicio {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../assets/fondo-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .h1_main{
+        text-align: center;
+    }
+    
+    .container_main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1em;
+
+       
+
+        .carta_presentacion {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            background-color: rgba($color-salmon, 0.5);
+            box-shadow: 0px 1px 10px $color-shadow;
+            border-radius: 15px;
+            cursor: default;
+            transition: all 400ms ease;
+
+                h2 {
+                    padding-top: 1em;
+                    font-weight: 700;
+                    font-size: 2em;
+                }
+                
+                p { 
+                    padding: 1em;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 1.3em;
+                }
+        }
+        
+        .carta_presentacion:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+            transform: translateY(-3%);
+        }
+        
+    }
+       
+    /** Estilos para el carrousel**/
+    
+    .contenedor_carrousel{
+        display: flex;
+        justify-content: center;
+        
+
+        .carousel {
+            margin: 2em 0; 
+            width: 80%;
+            max-width: 500px;
+            
+            
+            
+            .carousel-inner {
+                box-shadow: 0px 1px 10px $color-shadow; 
+                border-radius: 15px;
+                transition: all 400ms ease;
+
+                .carousel-item {
+                    height: 40vh;
+                    
+                    
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .carousel-inner:hover {
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+                transform: scale(100%, 100%);
+            }
+        }
+                
+    }
+
+    /**Comienzo estilos seccion nuestros clientes dicen home**/
+
+    .titulo_seccion{
+        text-align: center;
+        font-size: 2em;
+        padding: 0 0 20px 20px;
+    }
+
+    .container_clientes{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "cecilia cecilia cecilia cecilia"
+                            "juan juan silvia silvia"
+                            "juan juan silvia silvia"
+                            "fernando fernando fernando fernando";
+        justify-items: center;
+        padding: 10px;
+        gap: 10px;
+       
+        .comentario1 {
+            grid-area: juan;
+        }
+    
+        .comentario2 {
+            grid-area: silvia;
+        }
+    
+        .comentario3 {
+            grid-area: cecilia;
+        }
+    
+        .comentario4 {
+            grid-area: fernando;
+        } 
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            width: 100%;
+            background-color: rgba($color-salmon, 0.5);
+            box-shadow: 0px 1px 10px $color-shadow;
+            cursor: default;
+            transition: all 400ms ease;
+
+                h2 {
+                    text-align: center;
+                    margin-top: 0.5em;
+                }
+            
+                p {
+                    text-align: center;
+                    margin: 0.5em;
+                }
+        }
+
+            div:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+            transform: translateY(-3%);
+        }
+        
+    }
+
+/**Final estilos seccion nuestros clientes dicen home**/
+
+}
+
+/** Final estilos main HTML home**/
+
+/** Comienzo estilos HTML tratamientos cosmetologicos**/
+
+.body_tratamientos {
+    background-image: url(../assets/fondo-tratamientos.jpg);
+    height: 100%;
+
+    .titulo_servicios {
+        text-align: center;
+        padding-top: 0.5em; 
+               
+    }
+    
+    .contenedor_tarjetas{
+        display: grid;
+        grid-template-columns: 100%;
+        max-width: 500px;
+        align-items: center;
+        justify-items: center;
+        row-gap: 10px;
+
+        .tarjeta_servicio {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            height: 45vh;
+            margin: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            height: 100%;
+            transition: all 400ms ease;
+            box-shadow: 1px 3px 10px $color-shadow;
+
+            .img_servicio > img {
+                height: 150px;
+                min-height: 100%;
+                width: 100%;
+                border-radius: 0 0 10px 10px;
+                object-fit: cover;
+                object-position: 20% 40%;
+            }
+
+            .contenedor_texto--servicio {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                h2 {
+                    padding: 0 0 16px 0;
+                }
+                
+                p {
+                    padding: 0 16px;
+                }
+
+            }   
+              
+        } 
+
+        .tarjeta_servicio:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+            transform: translateY(-3%);
+            }   
+            
+    }
+}
+
+/** Final estilos HTML tratamientos cosmetologicos**/
+
+/**Comienzo estilos terapia floral**/
+
+.body_flor {
+    background-image: url(../assets/fondo-bash.jpg);
+    background-position: 48%;
+
+    .contenedor_flores {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        .flores_carrousel > img {
+            border-radius: 15px;
+            height: 70vh;
+            max-width: 90vw;
+        }
+        
+        .contenedor_flores--informacion {
+            display: flex;
+            flex-direction: column;  
+            margin: 1em;
+            min-height: 70vh;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 15px;
+            align-items: center;
+
+            h1 {
+                text-align: center;
+                padding: .2em;
+                font-size: 2.7em;
+            }
+            
+            h2 {
+                font-size: 2em;
+                text-align: center;
+            }
+            
+            p {
+                padding: 1em 0 1em 0;
+                font-size: 1.5em;
+                text-align: justify;
+                padding: .5em;
+            }
+        }
+               
+    }
+      
+}
+
+/**final estilos terapia floral**/
+
+/**Comienzo estilos nutricion**/
+
+.body_nutri {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
+    color: $color-texto-blanco;
+    background-size: cover;
+
+    .contenedor_nutri {
+        min-height: calc(97vh - 100px - 100px);
+        margin: 2em;
+    }
+}
+
+/**Final estilos nutricion**/
+
+/**Comienzo estilos contactame**/
+
+.body_contactame {
+    background-image: url(../assets/fondo-contactame.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100vh;
+    flex-wrap: nowrap;
+
+    .container_formulario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+        
+        .container_formulario--items {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba($color-verde, 0.5);
+            border-radius: 15px; 
+            width: 80%;
+            max-width: 650px;
+            box-shadow: 0px 1px 10px $color-shadow;
+             
+
+            .titulo_form{
+                text-align: center;
+                padding: .5em 0 .5em 0;
+            }
+
+            div {
+                padding: 0.5em 1.5em;
+                
+            }
+
+            input,
+            select,
+            textarea {
+                border-style: none;
+                border-radius: 5px;
+                box-shadow: 0px 1px 10px $color-shadow;
+            }
+                                    
+            .inputs {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .input_deja--mensaje {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    padding-bottom: 1em;
+                
+                }
+            }
+
+            .checkbox_promo {
+                    
+                label {
+                    justify-content: flex-start;
+                    display: flex;
+                    align-items: center;
+                }
+                input {
+                    width: 30px;
+                }
+
+              }
+
+            .formulario_botones {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10px;
+
+                input {
+                    width: 45%;
+                    box-shadow: 0px 1px 10px $color-shadow;
+                }
+
+                input:hover {
+                    color: $color-texto-blanco;
+                    background-color: $color-verde;
+                }
+            }
+            
+        }
+                
+    }
+        
+}
+
+/**Final estilos contactame**/
+
+@media (min-width: 990px) {
+
+    /** Estilos generales para los main**/
+
+    .contenedor_main,
+    .contenedor_seccion,
+    .contenedor_tratamientos {
+        max-width: 1200px;
+    }
+
+    /** fondos de pagina **/
+
+        .body_inicio,
+        .body_tratamientos,
+        .body_flor,
+        .body_nutri,
+        .body_contactame {
+            background-size: cover;
+        }
+    
+    /** Estilos footer**/
+    
+    .footer_web {
+        max-width: 1200px;
+    }
+
+
+    /**Comienzo estilos main HTML home**/
+
+    .body_inicio{
+
+        .h1_main{
+            padding: 1em; 
+        }
+    
+        .container_main {
+            flex-wrap: nowrap;
+            padding: 0 10px;
+
+            div {
+                justify-content: flex-start;
+            }
+        }
+           
+        /** Estilos para el carrousel**/
+    
+        .contenedor_carrousel{
+            display: flex;
+            justify-content: center;
+    
+            .carousel {
+                margin: 2em 0; 
+                max-width: 500px;   
+                
+                .carousel-inner {
+                    border-radius: 15px;
+                }
+            }
+        
+            
+        }
+    
+    }
+    
+    /** Final estilos main HTML home**/
+
+    /** Comienzo estilos HTML tratamientos cosmetologicos**/
+
+    .body_tratamientos {
+        
+        .contenedor_tarjetas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 30px; 
+            max-width: 100%; 
+            margin: 50px 0;  
+            
+            
+            .tarjeta_servicio {
+                display: flex;
+                flex-direction: row;
+                width: 550px;
+                height: 350px;
+                margin: 0;
+
+                .contenedor_texto--servicio > h2{
+                    text-align: center;
+                }
+            
+                .img_servicio > img {
+                    height: 300px;
+                    width: 200px;
+                    border-radius: 10px 0 0 10px;
+                    object-fit: fill;
+                }
+            }
+        }   
+
+    }
+   
+
+    /** Final estilos HTML tratamientos cosmetologicos**/
+
+    /**Estilos terapia floral**/
+
+    .body_flor{
+        
+        .contenedor_flores {
+            display: flex;
+            flex-direction: row;
+            min-height: calc(100vh - 90px - 90px);
+            align-items: center;
+        }
+        
+        .flores_carrousel > img {
+            margin: 2em;
+        }
+            
+        .contenedor_flores--informacion > h1 {
+            padding: 0.5em;
+            font-size: 3.5em;
+        }
+        
+        .contenedor_flores--informacion > p {
+            padding: 1em 0 1em 0;
+            font-size: 1.5em;
+        }
+    }
+
+    
+    
+    /** fin estilos terapia floral**/
+
+    /**Comienzo estilos contactame**/
+
+    .body_contactame {
+
+        .container_formulario{
+                        
+            .container_formulario--items{
+                width: 45vw;
+                min-width: 650px;
+
+                .inputs {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                  }
+              
+                  label {
+                      margin-right: 60px;
+                  }
+
+                  input {
+                    width: 65%;
+                  }
+
+                  .formulario_botones{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 20px;
+                    
+                    input {
+                        width: 40%;
+                    }
+                  }
+             
+            }
+        }
+    }
+    
+    
+
+    /**Final estilos contactame**/
+}
