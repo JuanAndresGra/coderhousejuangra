@@ -310,6 +310,18 @@ h1 {
 .body_tratamientos {
   background-image: url(../assets/fondo-tratamientos.jpg);
   height: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .body_tratamientos .titulo_servicios {
@@ -401,6 +413,18 @@ h1 {
 .body_flor {
   background-image: url(../assets/fondo-bash.jpg);
   background-position: 48%;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .body_flor .contenedor_flores {
@@ -418,13 +442,52 @@ h1 {
           align-items: center;
 }
 
-.body_flor .contenedor_flores .flores_carrousel > img {
+.body_flor .contenedor_flores .flores_carrousel {
   border-radius: 15px;
-  height: 70vh;
-  max-width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body_flor .contenedor_flores .flores_carrousel .carousel {
+  width: 90%;
+  max-width: 700px;
+}
+
+.body_flor .contenedor_flores .flores_carrousel .carousel .carousel-inner {
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.body_flor .contenedor_flores .flores_carrousel .carousel .carousel-inner .carousel-item {
+  height: 70%;
+  max-height: 570px;
+}
+
+.body_flor .contenedor_flores .flores_carrousel .carousel .carousel-inner .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.body_flor .contenedor_flores .flores_carrousel .carousel .carousel-inner:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(100%, 100%);
+          transform: scale(100%, 100%);
 }
 
 .body_flor .contenedor_flores .contenedor_flores--informacion {
+  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +496,10 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1em;
-  min-height: 70vh;
+  height: 100%;
+  min-height: 570px;
+  max-height: 571px;
+  max-width: 657px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 15px;
   -webkit-box-align: center;
@@ -699,19 +765,19 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    min-height: calc(100vh - 90px - 90px);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 100%;
   }
-  .body_flor .flores_carrousel > img {
-    margin: 2em;
+  .body_flor .contenedor_flores .flores_carrousel .carousel {
+    width: 100%;
   }
-  .body_flor .contenedor_flores--informacion > h1 {
+  .body_flor .contenedor_flores .flores_carrousel .carousel .carousel-inner {
+    max-width: 380px;
+  }
+  .body_flor .contenedor_flores .contenedor_flores--informacion h1 {
     padding: 0.5em;
     font-size: 3.5em;
   }
-  .body_flor .contenedor_flores--informacion > p {
+  .body_flor .contenedor_flores .contenedor_flores--informacion h2 {
     padding: 1em 0 1em 0;
     font-size: 1.5em;
   }
