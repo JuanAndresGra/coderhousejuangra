@@ -53,6 +53,7 @@ h1 {
 
     .nav-item > a:hover {
         color:  $color-verde;
+        text-shadow: 0px 0px 5px black;
     }
 
          
@@ -130,6 +131,7 @@ h1 {
             @include estilo-cajas;
             
                 h2 {
+                    text-align: center;
                     padding-top: 1em;
                     font-weight: 700;
                     font-size: 2em;
@@ -311,6 +313,7 @@ h1 {
 
                 h2 {
                     padding: 0 0 16px 0;
+                    text-align: center;
                 }
                 
                 p {
@@ -372,7 +375,6 @@ h1 {
                         img {
                             object-fit: cover;
                             height: 100%;
-                            
                         }
                     }
                 }
@@ -385,7 +387,8 @@ h1 {
         }
         
         .contenedor_flores--informacion {
-            overflow: scroll;
+            overflow-x: hidden;
+            overflow-y: scroll;
             display: flex;
             flex-direction: column;  
             margin: 1em;
@@ -393,7 +396,7 @@ h1 {
             min-height: 570px;
             max-height: 571px;
             max-width: 657px;
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.5);
             border-radius: 15px;
             align-items: center;
 
@@ -405,6 +408,7 @@ h1 {
             
             h2 {
                 font-size: 2em;
+                text-decoration: underline;
                 text-align: center;
             }
             
@@ -414,10 +418,20 @@ h1 {
                 text-align: justify;
                 padding: .5em;
             }
+
         }
-               
+
+        .contenedor_flores--informacion::-webkit-scrollbar {
+            width: 8px;
+        }
+       
+        .contenedor_flores--informacion::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: $color-salmon;
     }
       
+}
+
 }
 
 /**final estilos terapia floral**/
@@ -425,13 +439,33 @@ h1 {
 /**Comienzo estilos nutricion**/
 
 .body_nutri {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
     color: $color-texto-blanco;
     background-size: cover;
 
     .contenedor_nutri {
         min-height: calc(97vh - 100px - 100px);
         margin: 2em;
+
+        .caja_texto{
+            display: flex;
+            border: solid 5px $color-verde;
+            @include estilo-cajas;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+
+            h2 {
+                text-decoration: wavy 2px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                padding: 10px;
+            }
+        }
     }
 }
 
@@ -583,8 +617,6 @@ h1 {
         /** Estilos para el carrousel**/
     
         .contenedor_carrousel{
-            display: flex;
-            justify-content: center;
     
             .carousel {
                 margin: 2em 0; 
@@ -616,15 +648,11 @@ h1 {
             
             
             .tarjeta_servicio {
-                display: flex;
                 flex-direction: row;
                 width: 550px;
                 height: 350px;
                 margin: 0;
 
-                .contenedor_texto--servicio > h2{
-                    text-align: center;
-                }
             
                 .img_servicio > img {
                     height: 300px;
@@ -645,24 +673,20 @@ h1 {
      .body_flor {
         
         .contenedor_flores {
-            display: flex;
             flex-direction: row;
-            height: 100%;
             
-
-    
             .flores_carrousel {
-                
+                    
 
-                .carousel {
-                    width: 100%;
+                    .carousel {
+                        width: 100%;
 
-                    .carousel-inner {
-                        max-width: 380px;
-        
+                        .carousel-inner {
+                            max-width: 380px;
+            
+                    }
                 }
             }
-        }
 
             .contenedor_flores--informacion {
     
@@ -672,8 +696,7 @@ h1 {
                 }
                 
                 h2 {
-                    padding: 1em 0 1em 0;
-                    font-size: 1.5em;
+                    font-size: 2.5em;
                 }
                 
                 
@@ -681,10 +704,18 @@ h1 {
                    
         
           
+        }
     }
-}
     
     /** fin estilos terapia floral**/
+
+    /**Estilos nutri**/
+
+    .caja_nutri{
+        flex-wrap: nowrap;
+    }
+
+    /**fin nutri**/
 
     /**Comienzo estilos contactame**/
 
@@ -697,10 +728,8 @@ h1 {
                 min-width: 650px;
 
                 .inputs {
-                    display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    flex-wrap: nowrap;
                   }
               
                   label {
@@ -712,9 +741,6 @@ h1 {
                   }
 
                   .formulario_botones{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
                     padding: 20px;
                     
                     input {
@@ -726,7 +752,6 @@ h1 {
         }
     }
     
-    
+}
 
     /**Final estilos contactame**/
-}

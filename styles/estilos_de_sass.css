@@ -49,6 +49,7 @@ h1 {
 
 .header_container .nav-item > a:hover {
   color: #abd6ba;
+  text-shadow: 0px 0px 5px black;
 }
 
 .header_container .logo > img {
@@ -158,6 +159,7 @@ h1 {
 }
 
 .body_inicio .container_main .carta_presentacion h2 {
+  text-align: center;
   padding-top: 1em;
   font-weight: 700;
   font-size: 2em;
@@ -395,6 +397,7 @@ h1 {
 
 .body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio h2 {
   padding: 0 0 16px 0;
+  text-align: center;
 }
 
 .body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio p {
@@ -487,7 +490,8 @@ h1 {
 }
 
 .body_flor .contenedor_flores .contenedor_flores--informacion {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +504,7 @@ h1 {
   min-height: 570px;
   max-height: 571px;
   max-width: 657px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -515,6 +519,7 @@ h1 {
 
 .body_flor .contenedor_flores .contenedor_flores--informacion h2 {
   font-size: 2em;
+  text-decoration: underline;
   text-align: center;
 }
 
@@ -525,11 +530,20 @@ h1 {
   padding: .5em;
 }
 
+.body_flor .contenedor_flores .contenedor_flores--informacion::-webkit-scrollbar {
+  width: 8px;
+}
+
+.body_flor .contenedor_flores .contenedor_flores--informacion::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #e7a489;
+}
+
 /**final estilos terapia floral**/
 /**Comienzo estilos nutricion**/
 .body_nutri {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(../assets/nutri-fondo1.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3))), url(../assets/nutri-fondo1.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/nutri-fondo1.jpg);
   color: white;
   background-size: cover;
 }
@@ -537,6 +551,39 @@ h1 {
 .body_nutri .contenedor_nutri {
   min-height: calc(97vh - 100px - 100px);
   margin: 2em;
+}
+
+.body_nutri .contenedor_nutri .caja_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 5px #abd6ba;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.body_nutri .contenedor_nutri .caja_texto h2 {
+  -webkit-text-decoration: wavy 2px;
+          text-decoration: wavy 2px;
+}
+
+.body_nutri .contenedor_nutri .caja_texto p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
 }
 
 /**Final estilos nutricion**/
@@ -704,14 +751,6 @@ h1 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .body_inicio .contenedor_carrousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .body_inicio .contenedor_carrousel .carousel {
     margin: 2em 0;
     max-width: 500px;
@@ -734,9 +773,6 @@ h1 {
     margin: 50px 0;
   }
   .body_tratamientos .contenedor_tarjetas .tarjeta_servicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -744,9 +780,6 @@ h1 {
     width: 550px;
     height: 350px;
     margin: 0;
-  }
-  .body_tratamientos .contenedor_tarjetas .tarjeta_servicio .contenedor_texto--servicio > h2 {
-    text-align: center;
   }
   .body_tratamientos .contenedor_tarjetas .tarjeta_servicio .img_servicio > img {
     height: 300px;
@@ -758,14 +791,10 @@ h1 {
   /** Final estilos HTML tratamientos cosmetologicos**/
   /**Estilos terapia floral**/
   .body_flor .contenedor_flores {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 100%;
   }
   .body_flor .contenedor_flores .flores_carrousel .carousel {
     width: 100%;
@@ -778,19 +807,21 @@ h1 {
     font-size: 3.5em;
   }
   .body_flor .contenedor_flores .contenedor_flores--informacion h2 {
-    padding: 1em 0 1em 0;
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   /** fin estilos terapia floral**/
+  /**Estilos nutri**/
+  .caja_nutri {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  /**fin nutri**/
   /**Comienzo estilos contactame**/
   .body_contactame .container_formulario .container_formulario--items {
     width: 45vw;
     min-width: 650px;
   }
   .body_contactame .container_formulario .container_formulario--items .inputs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -798,8 +829,6 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
   .body_contactame .container_formulario .container_formulario--items label {
     margin-right: 60px;
@@ -808,19 +837,12 @@ h1 {
     width: 65%;
   }
   .body_contactame .container_formulario .container_formulario--items .formulario_botones {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 20px;
   }
   .body_contactame .container_formulario .container_formulario--items .formulario_botones input {
     width: 40%;
   }
-  /**Final estilos contactame**/
 }
+
+/**Final estilos contactame**/
 /*# sourceMappingURL=estilos_de_sass.css.map */
